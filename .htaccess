@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^.*\.(css|js|jpg|gif|png)$ [NC]
+RewriteRule ^(.*)$ dispatch.php?url=$1 [QSA]

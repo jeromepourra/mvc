@@ -1,0 +1,15 @@
+* redimensionner image avant ou après l'upload.
+* ajouter une variable $afiles sur le form checker.
+* ajouter des valeurs required ou non aux fields / files qui sont envoyé au form checker.
+* trouver une autre method que le pushCustomErreur pour envoyer des messages au html.
+
+* banissement des utilisateur, check à la connexion si l'utilisateur est banni, si oui lui afficher la raison, si non connexion normal
+* banissement des utilisateur, refusé le push en database si utilisateur banni pendant qu'il est connecté 
+* refaire les models avec du bindparam() partout avec le type de param utilisé et sa longueur max
+* définir dans les variable de session si l'utilisateur est majeur ou non à sa connexion ou alors update la bdd à la connexion si l'utilisateur est déjà majeur, ne rien faire, sinon s'il est majeur update, sinon ne rien faire et recheck à chaque connexion tant qu'il n'est pas majeur
+
+
+
+
+* les object dans la $_SESSION doivent être sérialisé puis désérializer avant de les utiliser, sans oublier d'inclure le fichier de classe
+* si un object est push directement en $_SESSION alors la classe doit être inclus avant d'utliser session_start()
